@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "immo"
+version = "0.1.0"
+description = ""
+authors = ["Massimiliano Angelino <angmas@amazon.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beautifulsoup4 = "^4.12.2"
+requests = "^2.31.0"
+pandas = "^2.1.3"
+faiss-cpu = "^1.7.4"
+bedrock-fm = {path = "../bedrock-fm/dist/bedrock_fm-0.4.5-py3-none-any.whl"}
+matplotlib = "^3.8.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
